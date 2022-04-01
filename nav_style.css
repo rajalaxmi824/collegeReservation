@@ -1,0 +1,135 @@
+body{
+  margin:0;
+  padding: 0;
+  font-family: montserrat;
+  background: linear-gradient(120deg,#cc2b5e,#753a88);
+  height:100vh;
+}
+.Symbol img{
+  border-radius: 50%;
+  width:100px;
+  height:100px;
+  display:block;
+  margin-top: 5px;
+}
+.Symbol a{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-family: sans-serif;
+  color:pink;
+  margin-left: 10px;
+}
+.navbar
+{
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 30px;
+  padding-top: 10px;
+}
+nav
+{
+  flex: 1;
+  text-align: right;
+}
+nav ul
+{
+  display: inline-block;
+  list-style: none;
+}
+nav ul li
+{
+  font-size: 20px;
+  color: white;
+  display: inline-block;
+  margin-right: 70px;
+}
+nav ul li a
+{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-family: sans-serif;
+}
+nav ul li button
+{
+  font-size: 20px;
+  color: white;
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+nav ul li button:hover
+{
+  color:aqua;
+}
+nav ul li a:hover
+{
+  color:aqua;
+}
+.About, .Contact{
+   display: none;
+}
+.button1:hover+.About, .button2:hover+.Contact {
+   display: block;
+   border: 2px solid white;
+   border-radius: 25px;
+   background-color:#bdfcbd;
+   color:black;
+   width:600px;
+   height:455px;
+   text-align: left;
+   padding:10px;
+   position: fixed;
+   top: 55%;
+   left: 50%;
+   transform: translate(20%,-50%);
+}
+.Slideshowcontainer{
+  max-width: 820px;
+  position: relative;
+  margin: 20px;
+}
+.Slides{
+  display:block;
+  border-radius: 25px;
+}
+.LeftArrow,.RightArrrow{
+  cursor:pointer;
+}
+.LeftArrow{
+  border: 1px solid black;
+  position:absolute;
+  top:50%;
+  color:white;
+  background-color: black;
+  opacity: 0.5;
+}
+.LeftArrow:hover,.RightArrrow:hover{
+  color:pink;
+}
+.RightArrrow {
+  right: 0;
+  position:absolute;
+  top:50%;
+  border: 1px solid black;
+  color:white;
+  background-color: black;
+  opacity: 0.5;
+}
+.Circle {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.Circle:hover {
+  background-color: #717171;
+}
